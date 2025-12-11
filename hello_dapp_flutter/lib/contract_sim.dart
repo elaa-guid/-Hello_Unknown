@@ -8,7 +8,7 @@ class HelloSimPage extends StatefulWidget {
 }
 
 class _HelloSimPageState extends State<HelloSimPage> {
-  String deployedName = "Unknown"; // simulé : valeur lue depuis "contrat"
+  String deployedName = "Unknown"; 
   final TextEditingController _controller = TextEditingController();
   bool isLoading = false;
 
@@ -26,7 +26,7 @@ class _HelloSimPageState extends State<HelloSimPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Hello DApp (Simulé)')),
+      appBar: AppBar(title: const Text('Hello DApp')),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: Column(
@@ -56,10 +56,10 @@ class _HelloSimPageState extends State<HelloSimPage> {
               child: isLoading ? const SizedBox(width:18, height:18, child: CircularProgressIndicator(strokeWidth:2)) : const Text('Définir le nom'),
             ),
             const SizedBox(height: 24),
-            const Text('Info : cette version est simulée — pas de blockchain connectée.'),
           ],
         ),
       ),
     );
   }
 }
+
