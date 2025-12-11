@@ -20,7 +20,7 @@ class _HelloSimPageState extends State<HelloSimPage> {
       deployedName = name;
       isLoading = false;
     });
-    // Ici normalement on aurait appelé contract_linking.setName(name)
+    
   }
 
   @override
@@ -62,4 +62,5 @@ class _HelloSimPageState extends State<HelloSimPage> {
     );
   }
 }
+
 
